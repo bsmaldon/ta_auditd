@@ -1,0 +1,15 @@
+{
+  "name": "josm5-ta_auditd",
+  "version": "0.1.0",
+  "author": "josm5",
+  "summary": "Module to install TA-auditd splunk app config for splunk forwarder",
+  "license": "Apache-2.0",
+  "source": "https://github.com/dalesit/TA_auditd",
+  "project_page": "https://github.com/dalesit/TA_auditd",
+  "issues_url": "https://github.com/dalesit/TA_auditd/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
