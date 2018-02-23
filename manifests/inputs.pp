@@ -30,7 +30,7 @@ class ta_auditd::inputs (
     content => template('ta_auditd/inputs.conf.erb'),
     owner   => 'splunk',
     group   => 'splunk',
-    notify  => Service['splunkforwarder']
+    notify  => Service['splunk']
   }
 
 }
