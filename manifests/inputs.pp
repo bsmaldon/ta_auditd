@@ -27,7 +27,7 @@ class ta_auditd::inputs (
 
   file { '/opt/splunkforwarder/etc/apps/TA_linux-auditd/local/inputs.conf':
     ensure  => present,
-    content => template('inputs.conf.erb'),
+    content => template('ta_auditd/inputs.conf.erb'),
     owner   => 'splunk',
     group   => 'splunk',
     notify  => Service['splunkforwarder']
