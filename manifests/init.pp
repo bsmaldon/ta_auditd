@@ -43,6 +43,9 @@
 # Copyright 2017 Your name here, unless otherwise noted.
 #
 class ta_auditd {
+
+  contain ::ta_auditd::inputs
+
   file { '/opt/splunkforwarder/etc/apps/TA_linux-auditd/':
     ensure  => 'directory',
     source  => 'puppet:///modules/ta_auditd/TA_linux-auditd',
@@ -51,5 +54,8 @@ class ta_auditd {
     recurse => true,
     require => Package['splunkforwarder'],
   }
+
+
+  -> Class['::ta_auditd::inputs']
 
 }
