@@ -53,6 +53,7 @@ class ta_auditd {
     group   => 'splunk',
     recurse => true,
     require => Package['splunkforwarder'],
+    notify  => Service['splunkforwarder']
   }
 
 
